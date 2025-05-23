@@ -16,3 +16,19 @@ For each Kronecker power i, an edge list file is generated.
 ```bash
 output_folder/graph_kron_power{i}_sample{s}.txt
 ```
+
+## GSDLFit
+### How to Run
+```bash
+python gsdlfit.py --path_to_directory  --init_matrix a00 a01 a10 a11 --number of iterations --learning rate
+```
+Example usage is shown below
+```bash
+python3 gsdlfit.py "../data/graph.txt" 0.9 0.7 0.5 0.2 100 0.00001
+```
+
+
+
+
+
+

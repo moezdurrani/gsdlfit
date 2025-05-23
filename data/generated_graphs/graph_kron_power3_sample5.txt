@@ -1,0 +1,14 @@
+# Synthetic Kronecker Graph 
+# Edges are directed 
+0 0
+0 3
+1 0
+1 2
+1 4
+2 2
+2 4
+3 2
+3 5
+4 2
+6 0
+6 6

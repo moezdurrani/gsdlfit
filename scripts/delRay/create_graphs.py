@@ -65,12 +65,11 @@ def main():
     parser.add_argument("init_matrix", nargs=4, type=float, help="Four parameters for the initiator matrix separated with space")
     parser.add_argument("num_of_graphs", type=int, help="(range of k values) Number of iterations for fitting the model")
     parser.add_argument("samples_per_k", type=int, help="Number of graphs being generated per k value")
-    parser.add_argument("num_workers", type=int, default=4, help="Number of parallel processes")
     parser.add_argument("output_dir", type=str, default=".", help="Directory to save the edge list files")
     args = parser.parse_args()
 
     init_matrix = np.array(args.init_matrix).reshape(2, 2)
-    create_graphs(init_matrix, args.num_of_graphs, args.samples_per_k, args.output_dir, args.num_workers)
+    create_graphs(init_matrix, args.num_of_graphs, args.samples_per_k, args.output_dir)
 
 if __name__ == "__main__":
     main()

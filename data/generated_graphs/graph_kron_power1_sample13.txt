@@ -1,0 +1,4 @@
+# Synthetic Kronecker Graph 
+# Edges are directed 
+0 0
+1 0
